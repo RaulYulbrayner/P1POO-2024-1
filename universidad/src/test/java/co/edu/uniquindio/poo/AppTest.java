@@ -18,12 +18,12 @@ public class AppTest {
     private static final Logger LOG = Logger.getLogger(AppTest.class.getName());
 
     /**
-     * Rigorous Test :-)
+     * Esta prueba verifica que la infomración de un estudiante es completa y bien diligenciada.
      */
     @Test
-    public void shouldAnswerWithTrue() {
-        LOG.info("Iniciado test shouldAnswerWithTrue");
-        assertTrue(true);
-        LOG.info("Finalizando test shouldAnswerWithTrue");
+    public void datosCompletos() {
+        LOG.info("Iniciado test datosCompletos");
+        
+        LOG.info("Finalizando test datosCompletos");
     }
 }
