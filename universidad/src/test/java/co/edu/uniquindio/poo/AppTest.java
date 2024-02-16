@@ -7,6 +7,7 @@
  */
 package co.edu.uniquindio.poo;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
@@ -23,7 +24,15 @@ public class AppTest {
     @Test
     public void datosCompletos() {
         LOG.info("Iniciado test datosCompletos");
-        
+        Estudiante estudiante = new Estudiante("Yulbryner", "vargas", "10944", "yul@gmail", "314654", (byte) 20);
+
+        assertEquals("Yulbryner", estudiante.nombre());
+        assertEquals("vargas", estudiante.apellido());
+        assertEquals("10944", estudiante.identificacion());
+        assertEquals("yul@gmail", estudiante.correo());
+        assertEquals("314654", estudiante.telefono());
+        assertEquals(20, estudiante.edad());
+
         LOG.info("Finalizando test datosCompletos");
     }
 }
