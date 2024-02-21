@@ -8,7 +8,8 @@
 package co.edu.uniquindio.poo;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
 import java.util.logging.Logger;
 import org.junit.jupiter.api.Test;
 
@@ -35,4 +36,26 @@ public class AppTest {
 
         LOG.info("Finalizando test datosCompletos");
     }
+
+    /**
+     * Esta prueba permite veriifcar que la información de un estudiante no puede ser nula
+     */
+    @Test
+    public void datosNulos(){
+        LOG.info("Inicio de la prueba de datosNulos");
+        assertThrows(Throwable.class, ()-> new Estudiante(null, null, null, null, null, (byte) 0));
+        LOG.info("Finalización de la prueba de datosNulos");
+    }
+
+    /**
+     * Prueba para verificar de los datos de un estudiante no esten vacios
+     */
+    @Test
+    public void datosVacios(){
+        LOG.info("Inicio de la prueba de datosVacios");
+        assertThrows(Throwable.class, ()-> new Estudiante("", "", "", "", "", (byte) 0));
+        LOG.info("Finalización de la prueba de datosVacios");
+    }
+
+
 }
