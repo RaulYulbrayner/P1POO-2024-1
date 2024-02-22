@@ -57,5 +57,25 @@ public class AppTest {
         LOG.info("Finalización de la prueba de datosVacios");
     }
 
+    /**
+     * Prueba para verifciar que la edad de un estudiante no puede ser negativa
+     */
+    @Test
+    public void edadNegativa(){
+        LOG.info("Inicio de la prueba de edadNegativa");
+        assertThrows(Throwable.class, ()-> new Estudiante("Camila", "Alzate Rios", "109453264", "camila@uniquindio.edu.co", "315635674", (byte) -18));
+        LOG.info("Finalización de la prueba de edadNegativa");
+    }
+
+    /**
+     * 
+     */
+    @Test
+    public void correoInvalido(){
+        LOG.info("Inicio de la prueba de edadNegativa");
+        assertThrows(Throwable.class, ()-> new Estudiante("Camila", "Alzate Rios", "109453264", "camilauniquindio.edu.co", "315635674", (byte) 18));
+        LOG.info("Finalización de la prueba de edadNegativa");
+    }
+
 
 }
