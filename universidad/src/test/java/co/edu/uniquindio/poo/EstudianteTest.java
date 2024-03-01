@@ -16,8 +16,8 @@ import org.junit.jupiter.api.Test;
 /**
  * Unit test for simple App.
  */
-public class AppTest {
-    private static final Logger LOG = Logger.getLogger(AppTest.class.getName());
+public class EstudianteTest {
+    private static final Logger LOG = Logger.getLogger(EstudianteTest.class.getName());
 
     /**
      * Esta prueba verifica que la infomración de un estudiante es completa y bien diligenciada.
