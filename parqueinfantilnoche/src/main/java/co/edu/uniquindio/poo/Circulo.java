@@ -6,7 +6,6 @@ public class Circulo extends Figura {
 
     /**
      * Este es el metodo constructor de la clase circulo
-     * 
      * @param radio
      */
     public Circulo(double radio) {
@@ -23,7 +22,6 @@ public class Circulo extends Figura {
 
     /**
      * Metodo get para obtener el radio de un circulo
-     * 
      * @return radio
      */
     public double getRadio() {
@@ -32,7 +30,6 @@ public class Circulo extends Figura {
 
     /**
      * Metodo set para modificar el radio de un circulo
-     * 
      * @param radio
      */
     public void setRadio(double radio) {

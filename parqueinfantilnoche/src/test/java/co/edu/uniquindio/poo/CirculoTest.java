@@ -10,7 +10,7 @@ public class CirculoTest {
     private static final Logger LOG = Logger.getLogger(AppTest.class.getName());
 
     /**
-     * Rigorous Test :-)
+     * Preuba para verificar que el area del circulo sea positiva
      */
     @Test
     public void areaRadioCirculoPositivo() {
@@ -18,7 +18,7 @@ public class CirculoTest {
 
         Circulo circulo = new Circulo(10);
 
-        assertEquals(314.1592653589793, circulo.calcularArea());
+        assertEquals(314.1592653589793, circulo.calcularArea(), App.PRECISION);
 
 
         LOG.info("Finalizando test areaRadioCirculoPositivo");
