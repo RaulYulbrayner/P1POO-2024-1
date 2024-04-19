@@ -8,10 +8,18 @@ public enum Material {
 
     private final double valorMetroCuadrado;
 
+    /**
+     * Metodo constructor de la lista de materiales
+     * @param valorMetroCuadrado
+     */
     private Material(double valorMetroCuadrado){
         this.valorMetroCuadrado=valorMetroCuadrado;
     }
 
+    /**
+     * Metodo que permite obtener el valor del metro cuadrado
+     * @return
+     */
     public double getValorMetroCuadrado() {
         return valorMetroCuadrado;
     }
