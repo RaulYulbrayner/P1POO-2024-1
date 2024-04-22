@@ -2,17 +2,17 @@ package co.edu.uniquindio.poo;
 
 public class Rectangulo extends Figura {
 
-    private double alto, ancho;
+    private double lado, ancho;
 
     /**
      * 
-     * @param alto
+     * @param lado
      * @param ancho
      */
-    public Rectangulo(double alto, double ancho){
-        assert alto > 0;
+    public Rectangulo(double lado, double ancho){
+        assert lado > 0;
         assert ancho > 0;
-        this.alto=alto;
+        this.lado=lado;
         this.ancho=ancho;
     }
 
@@ -20,15 +20,15 @@ public class Rectangulo extends Figura {
      * Metodo que permite calcular el area de un rectangulo
      */
     public double calcularArea(){
-        return alto*ancho;
+        return lado*ancho;
     }
 
     /**
      * Metodo que permite obtener el alto de un rectangulo
      * @return
      */
-    public double getAlto() {
-        return alto;
+    public double getlado() {
+        return lado;
     }
 
     /**
@@ -43,8 +43,8 @@ public class Rectangulo extends Figura {
      * Metodo que permite modificar el alto de un rectangulo
      * @param alto
      */
-    public void setAlto(double alto) {
-        this.alto = alto;
+    public void setlado(double lado) {
+        this.lado = lado;
     }
 
     /**
