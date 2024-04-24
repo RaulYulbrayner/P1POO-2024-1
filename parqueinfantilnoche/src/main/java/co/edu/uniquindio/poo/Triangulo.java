@@ -10,6 +10,7 @@ public class Triangulo extends Figura {
      * @param altura
      */
     public Triangulo(double base, double altura){
+        super("Triangulo");
         assert base > 0;
         assert altura > 0;
         this.base=base;

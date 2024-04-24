@@ -9,7 +9,7 @@ public class Rectangulo extends Figura {
      * @param ancho
      */
     public Rectangulo(double lado, double ancho){
-        super(nombre);
+        super("Rectangulo");
         assert lado > 0;
         assert ancho > 0;
         this.lado=lado;

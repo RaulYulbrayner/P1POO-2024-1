@@ -9,6 +9,7 @@ public class Circulo extends Figura {
      * @param radio
      */
     public Circulo(double radio) {
+        super("Circulo");
         assert radio > 0;
         this.radio = radio;
     }
