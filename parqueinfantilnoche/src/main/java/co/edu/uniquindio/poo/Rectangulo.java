@@ -5,11 +5,11 @@ public class Rectangulo extends Figura {
     private double lado, ancho;
 
     /**
-     * 
      * @param lado
      * @param ancho
      */
     public Rectangulo(double lado, double ancho){
+        super(nombre);
         assert lado > 0;
         assert ancho > 0;
         this.lado=lado;
